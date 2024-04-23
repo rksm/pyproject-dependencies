@@ -1,0 +1,17 @@
+[project]
+name = "pyproject-dependencies"
+requires-python = ">=3.10"
+version = "0.1.0"
+description = ""
+authors = [{name = "Robert Krahn", email = "robert@kra.hn"}]
+dependencies = []
+
+[project.scripts]
+pyproject-dependencies = "pyproject_dependencies.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pyproject_dependencies"]
