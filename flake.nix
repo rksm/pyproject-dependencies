@@ -33,7 +33,7 @@
           setuptools
         ];
 
-        propagatedBuildInputs = [
+        propagatedNativeBuildInputs = [
           pip
           toml
         ];
