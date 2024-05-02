@@ -4,7 +4,10 @@ requires-python = ">=3.10"
 version = "0.1.0"
 description = ""
 authors = [{name = "Robert Krahn", email = "robert@kra.hn"}]
-dependencies = []
+dependencies = [
+  "toml",
+  "pip"
+]
 
 [project.scripts]
 pyproject-dependencies = "pyproject_dependencies.main:main"

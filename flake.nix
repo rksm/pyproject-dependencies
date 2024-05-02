@@ -11,6 +11,7 @@
       pkgs = import nixpkgs { inherit system; };
       pythonPackages = pkgs.python311Packages;
       python = pkgs.python311;
+      pip = pythonPackages.pip;
     in
     with pythonPackages;
     {
@@ -31,9 +32,6 @@
 
         dependencies = [
           setuptools
-        ];
-
-        propagatedNativeBuildInputs = [
           pip
           toml
         ];
